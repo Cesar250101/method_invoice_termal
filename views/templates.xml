@@ -61,7 +61,7 @@
                                     <span t-field="o.sii_document_number" />
                                 </h5>
                             </div>
-                        <div class="row" id="header_sii" style="text-align:center; color:red; border: 2px solid red;padding:5px;">
+                        <div id="header_sii" style="text-align:center; color:red; border: 2px solid red;padding:5px;">
                             <!--<div style="text-align:center; color:red; border: 2px solid red;padding:5px;">-->
                                 <h4>
                                     R.U.T.:
