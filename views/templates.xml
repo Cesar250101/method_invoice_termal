@@ -75,7 +75,7 @@
                                 </h4>
                             <!--</div>-->
                         </div>
-                            <div class="row" style="text-align: center; margin-top:0px !important; padding-top:0px!important;">
+                            <div style="text-align: center; margin-top:0px !important; padding-top:0px!important;">
                                 <h7 style="color:red;text-align:center;font-size:11px;text-transform:uppercase;">
                                     SII -
                                     <span t-field="o.company_id.sii_regional_office_id.name" />
