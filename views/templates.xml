@@ -67,7 +67,7 @@
                                     R.U.T.:
                                     <t t-esc="o.company_id.partner_id.document_number" />
                                 </h4>
-                                <h4 class="pos-center-align">
+                                <h4>
                                     <t t-esc="o.document_class_id.name" />
                                     <br />
                                     N°:
