@@ -31,25 +31,27 @@
               <t t-call="web.basic_layout">
                     <div class="page">
                     <t t-foreach="docs" t-as="o">
-                        <div class="row" id="header">
-                            <div class="col-xs-12 text-center">
+                        <div class="row text-center" id="header">
                                 <h4>
                                     <span t-esc="o.company_id.name" />
                                 </h4>
-                                <h4>
-                                    <span t-esc="o.company_id.document_number" />
-                                </h4>
-                            </div>
-                            <div class="col-xs-12 text-center">
+                        </div>
+                        <div class="row text-center">
+                            <h4>
+                                <span t-esc="o.company_id.document_number" />
+                            </h4>
+                        </div>
+                        <div class="roe text-center">
                                 <h5 t-field="o.company_id.activity_description" />
-                            </div>
-                            <div class="col-xs-12 text-center">
+                        </div>
+                            <div class="row text-center">
                                 <h5>
                                     Casa matriz:
                                     <span t-esc="o.company_id.street" />
                                     <span t-esc="o.company_id.city" />
                                 </h5>
                             </div>
+                        <div class="row">
                             <t t-if="o.company_id.sucursal_ids">
                                 <h5>
                                     <span t-foreach="o.company_id.sucursal_ids" t-as="sucursal">
@@ -57,14 +59,15 @@
                                     </span>
                                 </h5>
                             </t>
-                            <div class="col-xs-12 text-center" t-if="o.document_class_id">
+
+                        </div>
+                            <div class="row text-center" t-if="o.document_class_id">
                                 <h5>
                                     <span t-field="o.document_class_id.name" />
                                     N°:
                                     <span t-field="o.sii_document_number" />
                                 </h5>
                             </div>
-                        </div>
                         <div class="row" id="header_sii">
                             <div
                                 style="text-align:center; color:red; border: 2px solid red;padding:5px;">
