@@ -5,7 +5,7 @@
             <field name="name">French Bank Check</field>
             <field name="default" eval="True"/>
             <field name="format">custom</field>
-            <field name="page_height">175</field>
+            <field name="page_height">275</field>
             <field name="page_width">65</field>
             <field name="orientation">Portrait</field>
             <field name="margin_top">3</field>
@@ -20,7 +20,7 @@
 
 		<report id="formato_factura_termica"
 			model="account.invoice"
-			report_type="qweb-html"
+			report_type="qweb-pdf"
 			string="Factura Formato Térmica"
 			menu="True"
 			name="method_invoice_termal.formato_factura_termica_template"
@@ -61,8 +61,8 @@
                                     <span t-field="o.sii_document_number" />
                                 </h5>
                             </div>
-                        <div class="row" id="header_sii">
-                            <div style="text-align:center; color:red; border: 2px solid red;padding:5px;">
+                        <div class="row" id="header_sii" style="text-align:center; color:red; border: 2px solid red;padding:5px;">
+                            <!--<div style="text-align:center; color:red; border: 2px solid red;padding:5px;">-->
                                 <h4>
                                     R.U.T.:
                                     <t t-esc="o.company_id.partner_id.document_number" />
@@ -73,7 +73,7 @@
                                     N°:
                                     <t t-esc="o.sii_document_number" />
                                 </h4>
-                            </div>
+                            <!--</div>-->
                         </div>
                             <div class="row" style="text-align: center; margin-top:0px !important; padding-top:0px!important;">
                                 <h7 style="color:red;text-align:center;font-size:11px;text-transform:uppercase;">
