@@ -186,7 +186,7 @@
                             </tbody>
                         </table>
 
-                        <div id="total" class="col-xs-12 pull-right">
+                        <div id="total">
                           <table class="table table-condensed">
                               <t t-if="o.global_descuentos_recargos">
                                 <tr>
