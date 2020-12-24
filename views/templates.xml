@@ -70,13 +70,14 @@
                         </div>-->
 
                         <div class="row" style="text-align:center; color:red; border: 2px solid red;padding:5px;">
-                                <h4>
+                                <h4 style="text-align:center">
                                     R.U.T.:
                                     <t t-esc="o.company_id.partner_id.document_number" />
                                 </h4>
+                            <br/>
                                 <h4 class="pos-center-align">
                                     <t t-esc="o.document_class_id.name" />
-                                    <br />
+                                    <br/>
                                     N°:
                                     <t t-esc="o.sii_document_number" />
                                 </h4>
